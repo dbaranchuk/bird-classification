@@ -2,13 +2,8 @@ import numpy as np
 from skimage.transform import resize
 
 from keras.models import Sequential, Model
-from keras.layers import Dense, Dropout, Activation, Flatten
-from keras.layers import Convolution2D, MaxPooling2D, ZeroPadding2D
+from keras.layers import Dense
 from keras.optimizers import SGD
-from keras.callbacks import EarlyStopping
-from keras import backend as K
-
-from keras.preprocessing.image import ImageDataGenerator
 from keras.utils.np_utils import to_categorical
 
 import matplotlib.pyplot as plt
@@ -61,7 +56,7 @@ class BirdClassifier:
     
     def train(self, mode):
         if mode == 'FC':
-            for layer in self.model.layers[:36]:
+            for layer in self.model.layers[:32]:
                 layer.trainable = False
             
             sgd = SGD(lr=0.0001, decay=1e-6, momentum=0.9)
