@@ -19,6 +19,6 @@ VGG_ILSVRC_16_layers: http://www.robots.ox.ac.uk/~vgg/software/very_deep/caffe/V
 Загружаем веса и prototxt файлы в ```./models/vgg/```
 
 Запускаем:  ```./build/tools/caffe train \
-            ```-model ./models/vgg/train_val.prototxt \
-            ```-solver ./models/vgg/solver.prototxt \
-            ```-weights ./models/vgg/VGG_ILSVRC_16_layers.caffemodel```
+            -model ./models/vgg/train_val.prototxt \
+            -solver ./models/vgg/solver.prototxt \
+            -weights ./models/vgg/VGG_ILSVRC_16_layers.caffemodel```
