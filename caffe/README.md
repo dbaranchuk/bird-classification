@@ -3,7 +3,6 @@
 Данные:
 
 train_birds_lmdb: https://drive.google.com/open?id=0BxZ-INMQnIZLd0dDNHN2dmJ0OWc
-
 test_birds_lmdb: https://drive.google.com/open?id=0BxZ-INMQnIZLb1pURXVxT1Y1VUE
 
 (Все изображения уже обрезаны и приведены к размеру 224х224)
