@@ -6,10 +6,7 @@ from keras.layers import Dense, Activation
 from keras.optimizers import SGD
 
 from keras.utils.np_utils import to_categorical
-
-import matplotlib.pyplot as plt
 from keras.applications.vgg16 import VGG16
-
 from keras_vgg import vgg16
 from keras.applications.vgg16 import preprocess_input
 from keras.callbacks import Callback
@@ -35,6 +32,7 @@ class SGDLearningRateTracker(Callback):
         lr = (optimizer.lr * (1. / (1. + optimizer.decay * optimizer.iterations))).eval()
         print('\nLR: {:.8f}'.format(float(lr)))
 
+        
 class BirdClassifier:
     def __init__(self):
         self.model = vgg16(model_dir)
@@ -47,21 +45,22 @@ class BirdClassifier:
         if y is None:
             self.X_test = X
         else:
-            self.X_train, self.y_train = (X, y) #([], [])
-        #self.X_val, self.y_val = ([], [])
-        #            X, y = list(X), list(y)
+            self.X_train, self.y_train = (X, y) 
+            # Split data to train and val  
+            #self.X_train, self.y_train = ([], [])
+            #self.X_val, self.y_val = ([], [])
+            #            X, y = list(X), list(y)
         
-        #for i in range(NUM_CLASSES):
-        #       self.X_train += X[i*PER_CLASS: i*PER_CLASS + TRAIN_SIZE_PER_CLASS]
-        #       self.y_train += y[i*PER_CLASS: i*PER_CLASS + TRAIN_SIZE_PER_CLASS]
+            #for i in range(NUM_CLASSES):
+            #       self.X_train += X[i*PER_CLASS: i*PER_CLASS + TRAIN_SIZE_PER_CLASS]
+            #       self.y_train += y[i*PER_CLASS: i*PER_CLASS + TRAIN_SIZE_PER_CLASS]
     
-        #       self.X_val += X[i*PER_CLASS + TRAIN_SIZE_PER_CLASS: (i+1)*PER_CLASS]
-        #           self.y_val += y[i*PER_CLASS + TRAIN_SIZE_PER_CLASS: (i+1)*PER_CLASS]
+            #       self.X_val += X[i*PER_CLASS + TRAIN_SIZE_PER_CLASS: (i+1)*PER_CLASS]
+            #           self.y_val += y[i*PER_CLASS + TRAIN_SIZE_PER_CLASS: (i+1)*PER_CLASS]
     
-        #self.X_train, self.y_train = np.array(self.X_train), np.array(self.y_train)
+            #self.X_train, self.y_train = np.array(self.X_train), np.array(self.y_train)
             #self.X_val, self.y_val = np.array(self.X_val), np.array(self.y_val)
-            
-            print(self.X_train.shape, self.y_train.shape)
+           
 
     def augment_data(self):
         X_aug, y_aug = ([],[])
