@@ -9,7 +9,7 @@
 
 ####Веса:
 
-* VGG_ILSVRC_16_layers: http://www.robots.ox.ac.uk/~vgg/software/very_deep/caffe/VGG_ILSVRC_16_layers.caffemodel
+VGG_ILSVRC_16_layers: http://www.robots.ox.ac.uk/~vgg/software/very_deep/caffe/VGG_ILSVRC_16_layers.caffemodel
 
 
 * ```cd .../caffe```
