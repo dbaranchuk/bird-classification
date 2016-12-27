@@ -20,7 +20,7 @@ PER_CLASS = 40
 TRAIN_SIZE_PER_CLASS = 40 #30
 
 BATCH_SIZE = 32
-N_EPOCH = 20
+N_EPOCH = 25
 
 model_dir = '/Users/dmitrybaranchuk/cv/cvintro2016/hw-07/vgg16_weights.h5'
 
