@@ -1,4 +1,5 @@
 ####Accuracy: 0.71 
+(Add iters to the solver in order to get better accuracy)
 
 ####Data:
 
