@@ -1,4 +1,4 @@
-####Accuracy: 0.82
+####Accuracy: 0.71 
 
 ####Data:
 
