@@ -1,6 +1,3 @@
-#### Accuracy: 0.71 
-Add iters to the solver in order to get better accuracy
-
 #### Data:
 
 * [train_birds_lmdb](https://drive.google.com/open?id=0BxZ-INMQnIZLd0dDNHN2dmJ0OWc)
