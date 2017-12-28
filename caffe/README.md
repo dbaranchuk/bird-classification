@@ -1,18 +1,18 @@
-####Accuracy: 0.71 
+#### Accuracy: 0.71 
 (Add iters to the solver in order to get better accuracy)
 
-####Data:
+#### Data:
 
-* train_birds_lmdb: https://drive.google.com/open?id=0BxZ-INMQnIZLd0dDNHN2dmJ0OWc
-* test_birds_lmdb: https://drive.google.com/open?id=0BxZ-INMQnIZLb1pURXVxT1Y1VUE
+* [train_birds_lmdb](https://drive.google.com/open?id=0BxZ-INMQnIZLd0dDNHN2dmJ0OWc)
+* [test_birds_lmdb](https://drive.google.com/open?id=0BxZ-INMQnIZLb1pURXVxT1Y1VUE)
 
 (All pictures were resized to 224х224)
 
-####Weights:
+#### Weights:
 
 VGG_ILSVRC_16_layers: http://www.robots.ox.ac.uk/~vgg/software/very_deep/caffe/VGG_ILSVRC_16_layers.caffemodel
 
-####Usage:
+#### Usage:
 
 * ```cd .../caffe```
 
